@@ -1,7 +1,8 @@
+
 if SHIELD_CORNE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "ChillCorne"
+    default "Corne"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -41,3 +42,19 @@ endchoice
 endif # LVGL
 
 endif
+
+
+if SHIELD_CORNE_DONGLE
+
+# Max 16 characters in keyboard name
+config ZMK_KEYBOARD_NAME
+    default "Corne"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT
+    default y
+
+endif
+
